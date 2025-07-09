@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { FiFilter, FiSearch, FiTrash2 } from 'react-icons/fi';
+import { FiSearch, FiTrash2 } from 'react-icons/fi';
 import { FaExclamationTriangle } from 'react-icons/fa';
 
 export default function FilterBar({ 
