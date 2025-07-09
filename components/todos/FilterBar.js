@@ -13,7 +13,7 @@ export default function FilterBar({
   return (
     <div className="card bg-base-100 dark:bg-gray-800 shadow-xl mb-6">
       <div className="card-body">
-        <div className="flex flex-col md:flex-row gap-4">
+        <div className="flex flex-col md:flex-row gap-2">
           <div className="join">
             <button 
               className={`btn join-item ${filter === 'all' ? 'btn-active' : ''}`}
@@ -61,8 +61,8 @@ export default function FilterBar({
               type="text"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              placeholder="Search tasks..."
-              className="w-full input input-bordered pl-10 bg-base-200 dark:bg-gray-700"
+              placeholder="Search"
+              className="w-full input input-bordered pl-10 bg-base-200 dark:bg-gray-700 dark:text-white"
             />
             <FiSearch className="absolute left-3 top-3.5 text-gray-400" />
           </div>
@@ -71,7 +71,7 @@ export default function FilterBar({
             onClick={clearCompleted}
             className="btn btn-outline btn-error"
           >
-            <FiTrash2 className="mr-2" /> Clear Completed
+            <FiTrash2 className="" /> Clear
           </button>
         </div>
       </div>

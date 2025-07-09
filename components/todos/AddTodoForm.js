@@ -24,14 +24,14 @@ export default function AddTodoForm({ addTodo }) {
             value={text}
             onChange={(e) => setText(e.target.value)}
             placeholder="What needs to be done?"
-            className="flex-grow input input-bordered bg-base-200 dark:bg-gray-700"
+            className="flex-grow input input-bordered bg-base-200 dark:bg-gray-700 dark:text-white"
           />
           
           <div className="flex gap-3">
             <select 
               value={priority}
               onChange={(e) => setPriority(e.target.value)}
-              className="select select-bordered bg-base-200 dark:bg-gray-700"
+              className="select select-bordered bg-base-200 dark:bg-gray-700 dark:text-white"
             >
               <option value="high">High Priority</option>
               <option value="medium">Medium Priority</option>
